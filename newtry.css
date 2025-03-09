@@ -1,0 +1,1255 @@
+html{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+@property --angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits:false;
+}
+.lightDiv{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    --angle:0deg;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(from var(--angle),transparent 80%,rgb(235, 118, 250));
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    animation: last 20s linear infinite;
+}
+@keyframes last{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+.s1{
+    width: 25%;
+    height: 77%;
+    background:rgb(73, 2, 73);
+    position: absolute;
+    top: 22%;
+    left: 0.5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.s2{
+    width: 15%;
+    height: 10%;
+    background-color: transparent;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 -2px rgb(73, 2, 73);
+}
+.s3{
+    width: 74.5%;
+    height: 77%;
+    background-color:rgb(73, 2, 73);
+    position: absolute;
+    top: 1%;
+    left: 25%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.s4{
+    width: 24.5%;
+    height: 21%;
+    background-color: black;
+    position: absolute;
+    border-bottom-right-radius: 20px;
+}
+.s5{
+    width: 15%;
+    height: 10%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 12%;
+    right: 10%;
+    border-radius: 20px;
+    box-shadow: -10px -10px 0 -2px rgb(73, 2, 73);
+}
+.s6{
+    width: 50%;
+    height: 30%;
+    background-color: rgb(73, 2, 73);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 1%;
+    right: 25%;
+}
+
+.s7{
+    width: 24.5%;
+    height: 21%;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    position: absolute;
+    border-top-left-radius: 20px;
+}
+
+.myImgDiv{
+    width: 40%;
+    height: 76%;
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+}
+.myImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.name{
+    font-family: "Righteous";
+    color: white;
+    font-size: 4vw;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    font-weight: 400;
+    font-style: normal;
+    top: 30%;
+    left: 45%;
+}
+.prof{
+    font-family: "Kaushan Script";
+    color: violet;
+    font-size: 2vw;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    font-weight: 400;
+    font-style: normal;
+    top: 40%;
+    left: 48%;
+}
+.desDiv{
+    width: 40%;
+    height: 18%;
+    position: absolute;
+    left: 45%;
+    top: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.des{
+    color: beige;
+    font-family: "Josefin Sans";
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4vw;
+    margin: 0%;
+    padding: 0%;
+}
+.download{
+    width: 10%;
+    height: 5%;
+    background-color: rgb(222, 108, 245);
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: "Righteous";
+    font-size: 1vw;
+}
+.download:hover{
+    background-color: rgb(144, 32, 167);
+    color: rgb(250, 241, 252);
+}
+
+
+@property --angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits:false;
+}
+.projectDiv{
+    border-radius: 20px;
+    --angle:0deg;
+    background: conic-gradient(from var(--angle),transparent 90%,rgb(235, 118, 250));
+    animation: last 20s linear infinite;
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes last{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+.outerDiv{
+    border-radius: 20px;
+    position: relative;
+    width: 99%;
+    height: 99%;
+    background-color: rgb(73, 2, 73);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.projectHeadingDiv{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 3%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectHeading{
+    font-size: 5vw;
+    color: rgb(222, 108, 245);
+    margin: 0%;
+    padding: 0%;
+    font-family: "Josefin Sans";
+    line-height: 0;
+}
+
+/*BEFORE CLICK*/
+
+.devContainer{
+    width: 30%;
+    height: 70%;
+    background-color: rgb(144, 63, 219);
+    margin: 0;
+    padding: 0%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 2s ease-in-out;
+}
+.desContainer{
+    width: 30%;
+    height: 70%;
+    background-color: rgb(144, 63, 219);
+    margin: 0;
+    padding: 0%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 2s ease-in-out;
+}
+
+@keyframes rajini{
+    to{
+        transform: translateX(1000%);
+    }
+}
+
+@keyframes rajini2{
+    to{
+        transform: translateX(-1000%);
+    }
+}
+.desContainer:hover, .devContainer:hover{
+    background-color: rgb(89, 10, 163);
+    box-shadow: 0 0 10px rgb(144, 63, 219),0 0 10px rgb(144, 63, 219),0 0 10px rgb(144, 63, 219),0 0 10px rgb(144, 63, 219);
+}
+.textDiv1{
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textDiv2{
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+    margin-top: 5%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text1{
+    margin: 0%;
+    padding: 0%;
+    font-size: 3vw;
+    font-family: "Righteous";
+    color: rgb(34, 1, 65);
+}
+.text2{
+    margin: 0%;
+    padding: 0%;
+    font-size: 3vw;
+    font-family: "Righteous";
+    color: rgb(34, 1, 65);
+}
+
+.devContainer:hover .text1{
+    color: rgb(189, 128, 247);
+}
+.devContainer:hover .text2{
+    color: rgb(189, 128, 247);
+}
+
+.textDiv3{
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textDiv4{
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+    margin-top: 5%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text3{
+    margin: 0%;
+    padding: 0%;
+    font-size: 3vw;
+    font-family: "Righteous";
+    color: rgb(34, 1, 65);
+}
+.text4{
+    margin: 0%;
+    padding: 0%;
+    font-size: 3vw;
+    font-family: "Righteous";
+    color: rgb(34, 1, 65);
+}
+
+.desContainer:hover .text3{
+    color: rgb(189, 128, 247);
+}
+.desContainer:hover .text4{
+    color: rgb(189, 128, 247);
+}
+
+
+/*AFTER CLICKING (DEVELOPMENT)*/
+
+.projectImgDiv{
+    width: 45%;
+    height: 45%;
+    background: yellow;
+    position: absolute;
+    border-radius: 20px;
+    top: -150%;
+    left: 5%;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: top 2s ease-in-out;
+}
+
+
+.projectImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projectTitle{
+    font-size: 3vw;
+    position: absolute;
+    font-family: "Righteous";
+    left: 52%;
+    top: -150%;
+    color: white;
+    transition: top 2s ease-in-out;
+}
+.projectTools{
+    font-size: 1.5vw;
+    position: absolute;
+    font-family: "Kaushan Script";
+    left: 52%;
+    top: -150%;
+    color: violet;
+    transition: top 2s ease-in-out;
+}
+.projectDes{
+    font-size: 1.2vw;
+    position: absolute;
+    font-family: "Viga";
+    left: 52%;
+    top: -150%;
+    color: beige;
+    transition: top 2s ease-in-out;
+}
+.soo{
+    color: rgb(247, 92, 118);
+}
+.live{
+    width: 10%;
+    height: 5%;
+    font-size: 1vw;
+    position: absolute;
+    left: 67%;
+    top: -150%;
+    border: none;
+    border-radius: 20px;
+    background: rgb(241, 186, 113);
+    font-family: "Righteous";
+    transition: top 2s ease-in-out;
+}
+.live:hover{
+    background-color: rgb(223, 141, 35);
+}
+.offDiv{
+    width: 45%;
+    height: 10%;
+    position: absolute;
+    top: -150%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: top 2s ease-in-out;
+}
+.prev{
+    width: 20%;
+    height: 50%;
+    background: violet;
+    border-radius: 20px;
+    border: none;
+    font-family: "Righteous";
+}
+.next{
+    width: 20%;
+    height: 50%;
+    background: violet;
+    border-radius: 20px;
+    border: none;
+    font-family: "Righteous";
+}
+.prev:hover{
+    background: rgb(185, 66, 185);
+}
+.next:hover{
+    background: rgb(185, 66, 185);
+}
+.off{
+    font-size: 3vw;
+    color: violet;
+    font-family: "Josefin Sans";
+    line-height: 0;
+}
+
+.goBack{
+    width: 10%;
+    height: 5%;
+    font-size: 1.5vw;
+    border: none;
+    background: rgb(250, 181, 192);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    top: -150%;
+    font-family: "Righteous";
+    left: 3%;
+    transition: top 2s ease-in-out;
+}
+.goBack:hover{
+    background:rgb(241, 117, 138);
+}
+
+/*AFTER CLICKING (DESIGN)*/
+
+
+.projectImgDiv1{
+    width: 45%;
+    height: 45%;
+    background: yellow;
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    top: -150%;
+    left: 5%;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 20px;
+    transition: top 2s ease-in-out;
+}
+@keyframes megam{
+    to{
+        transform: translateY(0%);
+    }
+}
+.projectImg1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projectTitle1{
+    font-size: 3vw;
+    position: absolute;
+    font-family: "Righteous";
+    left: 52%;
+    top: -150%;
+    color: white;
+    transition: top 2s ease-in-out;
+}
+.projectTools1{
+    font-size: 1.5vw;
+    position: absolute;
+    font-family: "Kaushan Script";
+    left: 52%;
+    top: -150%;
+    color: violet;
+    transition: top 2s ease-in-out;
+
+}
+.projectDes1{
+    font-size: 1.2vw;
+    position: absolute;
+    font-family: "Viga";
+    left: 52%;
+    top: -150%;
+    color: beige;
+    transition: top 2s ease-in-out;
+}
+.soo{
+    color: rgb(247, 92, 118);
+}
+.live1{
+    width: 10%;
+    height: 5%;
+    font-size: 1vw;
+    position: absolute;
+    left: 67%;
+    top: -150%;
+    border: none;
+    border-radius: 20px;
+    background: rgb(241, 186, 113);
+    font-family: "Righteous";
+    transition: top 2s ease-in-out;
+}
+.live1:hover{
+    background-color: rgb(223, 141, 35);
+}
+
+.offDiv1{
+    width: 45%;
+    height: 10%;
+    position: absolute;
+    top: -150%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: top 2s ease-in-out;
+}
+.prev1{
+    width: 20%;
+    height: 50%;
+    background: violet;
+    border-radius: 20px;
+    border: none;
+    font-family: "Righteous";
+}
+.next1{
+    width: 20%;
+    height: 50%;
+    background: violet;
+    border-radius: 20px;
+    border: none;
+    font-family: "Righteous";
+}
+.prev1:hover{
+    background: rgb(185, 66, 185);
+}
+.next1:hover{
+    background: rgb(185, 66, 185);
+}
+.off1{
+    font-size: 3vw;
+    color: violet;
+    font-family: "Josefin Sans";
+    line-height: 0;
+}
+
+.goBack1{
+    width: 10%;
+    height: 5%;
+    font-size: 1.5vw;
+    border: none;
+    background: rgb(250, 181, 192);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    top: -150%;
+    font-family: "Righteous";
+    left: 3%;
+    transition: top 2s ease-in-out;
+}
+.goBack1:hover{
+    background: rgb(241, 117, 138);
+}
+
+
+@keyframes d200{
+    
+    to{
+        transform: translateY(-200%);
+    }
+}
+
+@keyframes d500{
+    to{
+        transform: translateY(-500%);
+    }
+}
+@keyframes d1000{
+    to{
+        transform: translateY(-1000%);
+    }
+}
+@keyframes d1500{
+    to{
+        transform: translateY(-1500%);
+    }
+}
+@keyframes d1800{
+    to{
+        transform: translateY(-1800%);
+    }
+}
+
+@keyframes d0{
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+
+/*skill portion*/
+
+.skillDiv{
+    background:black;
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.skillOuterDiv{
+    border-radius: 20px;
+    position: relative;
+    width: 99%;
+    height: 99%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+@property --angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits:false;
+}
+.skill1{
+    --angle:0deg;
+    background: conic-gradient(from var(--angle),transparent 70%,rgb(235, 118, 250));
+    animation: last 20s linear infinite;
+    width: 30%;
+    height: 70%;
+    margin: 0;
+    padding: 0%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s ease-in-out;
+}
+.inskill1{
+    width: 97.5%;
+    height: 98%;
+    background-color: rgb(73, 2, 73);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@property --angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits:false;
+}
+.skill2{
+    --angle:0deg;
+    background: conic-gradient(from var(--angle),transparent 70%,rgb(235, 118, 250));
+    animation: last 20s 5s linear infinite;
+    width: 30%;
+    height: 70%;
+    margin: 0;
+    padding: 0%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 2s ease-in-out;
+}
+
+.inskill2{
+    width: 97.5%;
+    height: 98%;
+    background-color: rgb(73, 2, 73);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skillHeadingDiv{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 3%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillHeading{
+    font-size: 5vw;
+    color: rgb(222, 108, 245);
+    margin: 0%;
+    padding: 0%;
+    font-family: "Josefin Sans";
+    line-height: 0;
+}
+.htmlDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.html{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+
+.cssDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.css{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+}
+
+.jsDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.js{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+}
+.reactDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.react{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+.typeDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+
+
+.pythonDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.python{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+
+.cDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+
+.ccDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cc{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+.javaDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.java{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+.fastDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fast{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+
+.postDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+.fireDiv{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fire{
+    margin: 0%;
+    padding: 0%;
+    color: pink;
+    font-family: "Josefin Sans";
+    font-size: 2.5vw;
+
+}
+@property --angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits:false;
+}
+.contactDiv{
+    --angle:0deg;
+    background: conic-gradient(from var(--angle),transparent 70%,rgb(235, 118, 250));
+    animation: last 20s linear infinite;
+    margin-top: 1%;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+
+.contactOuterDiv{
+    border-radius: 20px;
+    position: relative;
+    width: 99%;
+    height: 99%;
+    background-color: rgb(73, 2, 73);
+    overflow: hidden;
+}
+.contactTitleDiv{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactTitle{
+    font-size: 5vw;
+    color: rgb(222, 108, 245);
+    margin: 0%;
+    padding: 0%;
+    font-family: "Josefin Sans";
+    line-height: 0;
+}
+.emailDiv{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+
+    font-family: "Viga";
+    font-weight: 400;
+    font-style: normal;
+    color: pink;
+}
+
+.phDiv{
+    position: absolute;
+    top: 54%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ph{
+
+    font-family: "Viga";
+    font-weight: 400;
+    font-style: normal;
+    color: pink;
+}
+
+.linkedinDiv{
+    position: absolute;
+    top: 68%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkedin{
+
+    font-family: "Viga";
+    font-weight: 400;
+    font-style: normal;
+    color: pink;
+}
+.linkedin:hover{
+    border-bottom: 3px solid rgb(252, 80, 109);
+    color: rgb(252, 80, 109);
+}
+.instaDiv{
+    position: absolute;
+    top: 82%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insta{
+
+    font-family: "Viga";
+    font-weight: 400;
+    font-style: normal;
+    color: pink;
+}
+.insta:hover{
+    border-bottom: 3px solid rgb(252, 80, 109);
+    color: rgb(252, 80, 109);
+}
+
+@media screen and (max-width:850px){
+    .lightDiv{
+        height: 50%;
+    }
+    .projectDiv{
+        height: 50%;
+    }
+    .skillDiv{
+        height: 50%;
+    }
+    .contactDiv{
+        height: 50%;
+    }
+}
+@media screen and (max-width:500px){
+    .lightDiv{
+        height: 35%;
+    }
+    .projectDiv{
+        height: 30%;
+    }
+    .skillDiv{
+        height: 30%;
+    }
+    .contactDiv{
+        height: 30%;
+    }
+    .prev,.next,.prev1,.next1{
+        font-size: 1.5vw;
+    }
+    .email,.ph,.linkedin,.insta{
+        font-size: 3vw;
+    }
+    .myImgDiv{
+        width: 48%;
+        left: 2%;
+    }
+    .name,.desDiv,.download{
+        left: 48%;
+    }
+    .prof{
+        left: 51%;
+    }
+    
+}
+/*
+rgb(73, 2, 73)
+.s1{
+    width: 15%;
+    height: 80%;
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    border-radius: 10px;
+    background: violet;
+}
+.s2{
+    width: 10%;
+    height: 5%;
+    background: transparent;
+    border: 20px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0 0 10px 0;
+    position: absolute;
+    top: 9.7%;
+    left: 14%;
+    z-index: 2;
+}
+.s3{
+    width: 60%;
+    height: 50%;
+    background: violet;
+    position: absolute;
+    top: 2%;
+    left: 24%;
+    border-top-left-radius: 10px;
+}
+.s4{
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    left: 15%;
+    top: 16%;
+    background: violet;
+  
+}
+*/
+/*
+//new border effect is here
+.s1{
+    width: 30%;
+    height: 70%;
+    background:red;
+    position: absolute;
+    top: 22%;
+    left: 1%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.s2{
+    width: 37%;
+    height: 21.7%;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px blue;
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    z-index: 5;
+}
+.s3{
+    width: 30%;
+    height: 70%;
+    background: violet;
+    position: absolute;
+    top: 23%;
+    left: 31%;
+}
+.s4{
+    width: 30%;
+    height: 30%;
+    background: violet;
+    position: absolute;
+    left: 40%;
+    border-top-left-radius: 10px;
+    top: 3%;
+}
+.s5{
+    width: 39%;
+    height: 22%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: green;
+    z-index: 3;
+    border-bottom-right-radius: 10px;
+}
+.s6{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 -2px blue;
+
+}
+*/
